@@ -11,7 +11,7 @@ const router = express.Router();
 config({ path: "./config.env" });
 
 app.use(cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: ['https://friendly-taiyaki-e78cde.netlify.app', 'http://localhost:5173'],
     methods: ["POST"],
     credentials: true
 }));
